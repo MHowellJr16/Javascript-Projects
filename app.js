@@ -38,5 +38,35 @@ function lessThanOrEqualToZero(num) {
 }
 console.log(lessThanOrEqualToZero(3))
 // time stamp: 15:19
-
+// EIGHTH PROBLEM
+function oppositeBoolean(realBoolean) {
+    return !realBoolean
+}
+console.log(oppositeBoolean(false))
+// NINTH PROBLEM
+function isNotZero(num) {
+    return num !== 0
+}
+console.log(isNotZero(null))
+// TENTH PROBLEM
+function calcRemainder(number1, number2) {
+    return number1 % number2
+}
+console.log(calcRemainder(4,2))
+// ELEVENTH PROBLEM
+function isOdd(num) {
+    return num % 2 !== 0 
+}
+console.log(isOdd(5))
+// TWELFTH PROBLEM
+function booleanInteger(num) {
+    return num % 2 === 0 ? 1 : -1
+}
+console.log(booleanInteger(3))
+// THIRTEENTH PROBLEM
+function isLoggedInAndSubscribed(loggedIn, subscribed) {
+    return (loggedIn === 'Logged In') && (subscribed === 'Subscribed')
+}
+console.log(isLoggedInAndSubscribed('Logged In', 'Subscrib'))
+// time stamp: 34:18
 
