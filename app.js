@@ -1,3 +1,6 @@
+/**
+ * BEGINNER QUESTIONS
+ */
 // FIRST PROBLEM
 function addition(num1, num2) {
     return num1 + num2 // ALWAYS USE 'RETURN'
@@ -67,6 +70,20 @@ console.log(booleanInteger(3))
 function isLoggedInAndSubscribed(loggedIn, subscribed) {
     return (loggedIn === 'Logged In') && (subscribed === 'Subscribed')
 }
-console.log(isLoggedInAndSubscribed('Logged In', 'Subscrib'))
+console.log(isLoggedInAndSubscribed('Logged In', 'Subscribed'))
 // time stamp: 34:18
-
+// FOURTEENTH PROBLEM
+function isLoggedInAndSubscribed(loggedIn, subscribed) {
+    return(loggedIn === 'Logged In') || (subscribed === 'Subscribed')
+}
+console.log(isLoggedInAndSubscribed('Logged In', 'Subscribed'))
+/**
+ * MEDIUM QUESTIONS
+ */
+// FIRST PROBLEM
+function filterOutFalsy(elem1, elem2) {
+    return (!elem1) ? elem1 : elem2
+}
+console.log(filterOutFalsy(0 , 500))
+// SECOND PROBLEM
+// time stamp: 4:27
