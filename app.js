@@ -87,3 +87,23 @@ function filterOutFalsy(elem1, elem2) {
 console.log(filterOutFalsy(0 , 500))
 // SECOND PROBLEM
 // time stamp: 4:27
+function arrLength(arr) {
+   return arr.length
+}
+console.log(arrLength([1,2,3]))
+// THIRD PROBLEM
+function lastElem(arr) {
+    return arr[arr.length -1]
+}
+console.log(lastElem([1,2,3,4]))
+// FOURTH PROBLEM
+function arrSum(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
+    }
+    return sum
+}
+console.log(arrSum([1, 4, 6, 7]))
+// FIFTH PROBLEM
+// time stamp: 12:09
