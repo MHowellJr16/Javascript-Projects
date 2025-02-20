@@ -107,3 +107,64 @@ function arrSum(arr) {
 console.log(arrSum([1, 4, 6, 7]))
 // FIFTH PROBLEM
 // time stamp: 12:09
+function progressiveSum(num) {
+    let progSum = 0
+    for (let i = 1; i <= num; i++) {
+        progSum = progSum + i
+    }
+    return progSum
+}
+console.log(progressiveSum(5))
+// SISXTH PROBLEM
+function calcTime(seconds) {
+    let timerMinutes = Math.floor(seconds / 60)
+    let timerSeconds = seconds % 60
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
+    }
+    return timerMinutes + ':' + timerSeconds
+}
+console.log(calcTime(80))
+// SEVENTH PROBLEM
+function getMax(arr) {
+    let max = arr[0]
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return max
+}
+console.log(getMax([100, 200, 300]))
+// EIGhTH PROBLEM
+function getReverse(str) {
+    let reveredString = ""
+    for (let i = 0; i < str.length; i++) {
+    reveredString = str[i] + reveredString
+    }
+   return reveredString
+}
+console.log(getReverse('Mark'))
+/** Can also use REVERSE ARRAY:
+ * ".split('').reverse().join('')" */ 
+function getSecondReverse(str) {
+    return str.split('').reverse().join('')
+}
+console.log(getSecondReverse('Mark'))
+//NINTH PROBLEM
+function convertToZeros(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = 0
+    }
+    return arr
+}
+console.log(convertToZeros([9, 2, 0]))
+/**
+ * Can use MAP
+ */
+function newConvertToZeros(arr) {
+    return arr.map(elem => 0)
+}
+console.log(newConvertToZeros([1, 3, 4]))
+// TENTH PROBLEM
+// time stamp: 38:56
