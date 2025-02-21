@@ -194,3 +194,7 @@ function convertToBoolean(arr) {
 }
 console.log(convertToBoolean([500, 0, undefined, 'Mark']))
 // THIRTEENTH QUESTION
+// HARD QUESTIONS
+function showRating() {
+    
+}
