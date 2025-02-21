@@ -168,3 +168,29 @@ function newConvertToZeros(arr) {
 console.log(newConvertToZeros([1, 3, 4]))
 // TENTH PROBLEM
 // time stamp: 38:56
+function removeApples(arr) {
+    let noApples = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 'Apples') {
+            noApples.push(arr[i])
+        }
+    }
+    return noApples
+}
+console.log(removeApples(['Banannas', 'Apples', 'Pears']))
+// Can also use 'ARRAY FILER'
+function newRemoveApples(arr) {
+    return arr.filter(elem => elem !== 'Apples')
+}
+console.log(newRemoveApples(['Apples', 'Pears', 'Oranges'])) // MUST use '[]'!!
+// ELEVENTH PROBLEM
+function filteringOutFalsy(arr) {
+    return arr.filter(elem => !!elem === true) // Use "!!" when evalutating if TRUE or FALSE!
+}
+console.log(filteringOutFalsy([null, 0, '0', undefined]))
+// TWEFLTH QUESTION
+function convertToBoolean(arr) {
+    return arr.map(elem => !!elem)
+}
+console.log(convertToBoolean([500, 0, undefined, 'Mark']))
+// THIRTEENTH QUESTION
