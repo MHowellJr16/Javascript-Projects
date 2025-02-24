@@ -195,6 +195,23 @@ function convertToBoolean(arr) {
 console.log(convertToBoolean([500, 0, undefined, 'Mark']))
 // THIRTEENTH QUESTION
 // HARD QUESTIONS
-function showRating() {
-    
+function showRating(rating) {
+    let ratings = "" 
+    for (let i = 0; i < Math.floor(rating); i++) {
+        ratings = ratings + "*"
+        if (i !== Math.floor(rating) - 1) {
+            ratings = ratings + " "
+        }
+    }
+    if (!Number.isInteger(rating)) {
+        ratings = ratings + " ."
+    }
+    return ratings
 }
+console.log(showRating(4.5))
+// SECOND QUESTION
+function sortLowToHigh(numbers) {
+    return numbers.sort((a, b) => a - b) // Use this "a-b" method to sort by NUMBER!!
+}
+console.log(sortLowToHigh([2, 13, 6, 1 ]))
+// time stamp: 14:57
