@@ -212,6 +212,18 @@ console.log(showRating(4.5))
 // SECOND QUESTION
 function sortLowToHigh(numbers) {
     return numbers.sort((a, b) => a - b) // Use this "a-b" method to sort by NUMBER!!
+    // "b - a" will make array go in REVERSE ORDER(HIGH TO LOW)
 }
 console.log(sortLowToHigh([2, 13, 6, 1 ]))
 // time stamp: 14:57
+// THIRD QUESTION
+function sortHighToLow(numbers) {
+    return numbers.sort((a,b) => b.price - a.price)
+}
+console.log(sortHighToLow([
+    {id: 1, price: 50}, 
+    {id: 2, price: 0},
+    {id: 3, price: 500},
+    ])
+)
+// time stamp: 18:36 
