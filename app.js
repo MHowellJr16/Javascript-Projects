@@ -226,4 +226,19 @@ console.log(sortHighToLow([
     {id: 3, price: 500},
     ])
 )
-// time stamp: 18:36 
+// time stamp: 18:36
+// FOURTH QUESTION: YOUTUBE
+// FIFTH QUESTION
+async function postsByUser(userId) {
+    // Use FETCH to access WEBSITES
+    const promise = await fetch('https://jsonplaceholder.typicode.com/posts')
+    // Use '.JSON()' to access BACKEND INFORMATION
+    const result = await promise.json()
+
+    console.log(result)
+    const posts = result.filter(element => element.userId === userId)
+    console.log(posts)
+}
+postsByUser(4)
+// SIXTH QUESTION
+// time stamp: 26:11
