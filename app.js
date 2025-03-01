@@ -242,3 +242,12 @@ async function postsByUser(userId) {
 postsByUser(4)
 // SIXTH QUESTION
 // time stamp: 26:11
+async function firstSixIncomplete(userId) {
+    const bestPromise = await fetch('https://jsonplaceholder.typicode.com/todos')
+    const bestResult = await bestPromise.json()
+    const bestPosts = result.filter(element => element.userId === userId)
+    for (let i = 0; i > 6; i++) {
+
+    }
+}
+// time stamp: 30:16
